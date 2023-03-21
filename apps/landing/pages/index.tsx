@@ -1,7 +1,7 @@
 export function Index() {
   return (
     <div>
-      <div>asd</div>
+      <div className='bg-gray-500'>asd</div>
     </div>
   )
 }
