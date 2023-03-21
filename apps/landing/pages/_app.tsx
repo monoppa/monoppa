@@ -1,6 +1,13 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import { Inter } from 'next/font/google'
+
 import '../src/styles/global.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
@@ -8,7 +15,14 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Welcome to landing!</title>
       </Head>
-      <main className='app'>
+
+      <style jsx global>{`
+        html {
+          font-family: ${inter.style.fontFamily};
+        }
+      `}</style>
+
+      <main className={`${inter.variable} font-sans`}>
         <Component {...pageProps} />
       </main>
     </>

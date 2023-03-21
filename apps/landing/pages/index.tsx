@@ -1,9 +1,7 @@
+import HomeBox from '../src/boxes/HomeBox/HomeBox'
+
 export function Index() {
-  return (
-    <div>
-      <div className='bg-gray-500'>asd</div>
-    </div>
-  )
+  return <HomeBox />
 }
 
 export default Index
