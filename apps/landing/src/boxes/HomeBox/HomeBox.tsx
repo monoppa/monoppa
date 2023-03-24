@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import MeCard from './sections/MeCard/MeCard'
+import TorabelCard from './sections/TorabelCard/TorabelCard'
+import LuxorCard from './sections/LuxorCard/LuxorCard'
 
 const IMAGE_WIDTH = 300
 const IMAGE_HEIGHT = IMAGE_WIDTH * 1.25
@@ -19,6 +21,17 @@ const HomeBox = () => {
             className='hidden lg:block'
           />
         </header>
+
+        <section className='flex mt-4 gap-x-4'>
+          {/* left column */}
+          <div className='flex flex-col flex-1 w-1/2 gap-y-4'>
+            <TorabelCard />
+          </div>
+          {/* right column */}
+          <div className='flex flex-col flex-1 w-1/2 gap-y-4'>
+            <LuxorCard />
+          </div>
+        </section>
       </div>
     </div>
   )
