@@ -1,14 +1,39 @@
 import React, { ReactNode } from 'react'
 import cx from 'classnames'
 
+type CardVariantKeys = keyof typeof cardVariants
+
 type HomeCardProps = {
-  variant: keyof typeof cardVariants
+  variant: CardVariantKeys
   children: ReactNode
 }
 
-const cardVariants = {
-  torabel: 'bg-blue-600',
-  luxor: 'bg-[#000000] py-8',
+type CardVariantProp = {
+  classes: string
+  style: React.CSSProperties
+}
+
+type CardVariant = Record<string, CardVariantProp>
+
+const cardVariants: CardVariant = {
+  torabel: {
+    classes: 'bg-blue-600',
+    style: {},
+  },
+  luxor: {
+    classes: 'bg-[#000000] py-8',
+    style: {},
+  },
+  latestPost: {
+    classes: 'bg-gray-900',
+    style: {},
+  },
+  playlist: {
+    classes: 'bg-cover bg-center rounded-md',
+    style: {
+      backgroundImage: 'url(/img/lounge.png)',
+    },
+  },
 }
 
 const HomeCard = (props: HomeCardProps) => {
@@ -18,8 +43,9 @@ const HomeCard = (props: HomeCardProps) => {
     <div
       className={cx(
         'rounded-lg overflow-hidden relative',
-        cardVariants[variant]
+        cardVariants[variant].classes
       )}
+      style={cardVariants[variant].style}
     >
       {children}
     </div>

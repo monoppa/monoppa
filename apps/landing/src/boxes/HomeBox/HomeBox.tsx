@@ -3,6 +3,8 @@ import Image from 'next/image'
 import MeCard from './sections/MeCard/MeCard'
 import TorabelCard from './sections/TorabelCard/TorabelCard'
 import LuxorCard from './sections/LuxorCard/LuxorCard'
+import LatestPostCard from './sections/LatestPostCard/LatestPostCard'
+import PlaylistCard from './sections/PlaylistCard/PlaylistCard'
 
 const IMAGE_WIDTH = 300
 const IMAGE_HEIGHT = IMAGE_WIDTH * 1.25
@@ -26,10 +28,13 @@ const HomeBox = () => {
           {/* left column */}
           <div className='flex flex-col flex-1 w-1/2 gap-y-4'>
             <TorabelCard />
+            <LatestPostCard />
           </div>
+
           {/* right column */}
           <div className='flex flex-col flex-1 w-1/2 gap-y-4'>
             <LuxorCard />
+            <PlaylistCard />
           </div>
         </section>
       </div>

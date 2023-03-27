@@ -16,6 +16,9 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
       },
+      animation: {
+        'spin-disc': 'spin 3s linear infinite',
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
