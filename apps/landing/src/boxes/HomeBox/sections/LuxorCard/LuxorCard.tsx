@@ -11,11 +11,11 @@ const LuxorCard = () => {
           <div className='flex items-center gap-x-2'>
             <p className='font-semibold text-3xl text-[#E8BC50]'>Luxor,</p>
 
-            <p className='text-3xl text-gray-200'>Software Engineer</p>
+            <p className='text-3xl text-neutral-200'>Software Engineer</p>
           </div>
         </div>
 
-        <p className='text-base text-gray-200'>2021 - Present</p>
+        <p className='text-base text-neutral-200'>2021 - Present</p>
       </div>
 
       <div className='flex items-center justify-between mt-8 gap-x-6'>

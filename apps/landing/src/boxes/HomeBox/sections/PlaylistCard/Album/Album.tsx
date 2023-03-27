@@ -37,7 +37,7 @@ const Album = (props: AlbumProps) => {
       onMouseLeave={onMouseLeave}
     >
       {/* album cover */}
-      <div className='absolute inset-0 z-20 overflow-hidden border border-gray-500'>
+      <div className='absolute inset-0 z-20 overflow-hidden border border-neutral-500'>
         {/* album artwork */}
         <a.div
           className='w-full h-full'

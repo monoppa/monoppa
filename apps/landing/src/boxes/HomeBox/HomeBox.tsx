@@ -11,7 +11,7 @@ const IMAGE_HEIGHT = IMAGE_WIDTH * 1.25
 
 const HomeBox = () => {
   return (
-    <div className='bg-gray-100'>
+    <div className='bg-neutral-100'>
       <div className='max-w-5xl px-4 py-8 mx-auto'>
         <header className='flex justify-between gap-x-4'>
           <MeCard />

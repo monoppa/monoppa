@@ -14,7 +14,7 @@ const PlaylistCard = () => {
         <div className='relative z-10 p-8 rounded-md '>
           <div className='flex justify-center w-full pb-4'>
             <MusicIcon color='white' style={{ position: 'relative' }} />
-            <p className='relative z-10 text-2xl text-center text-gray-50'>
+            <p className='relative z-10 text-2xl text-center text-neutral-50'>
               Spotify Playlists
             </p>
           </div>

@@ -6,8 +6,8 @@ const TorabelCard = () => {
   return (
     <HomeCard variant='torabel'>
       <div className='flex flex-col p-8 pb-0'>
-        <p className='text-3xl font-semibold text-gray-50'>Torabel, Maker</p>
-        <p className='text-base text-gray-100'>2022 - Present</p>
+        <p className='text-3xl font-semibold text-neutral-50'>Torabel, Maker</p>
+        <p className='text-base text-neutral-100'>2022 - Present</p>
       </div>
 
       <div className='w-full relative h-[340px]'>

@@ -25,7 +25,7 @@ const cardVariants: CardVariant = {
     style: {},
   },
   latestPost: {
-    classes: 'bg-gray-900',
+    classes: 'bg-neutral-900',
     style: {},
   },
   playlist: {
