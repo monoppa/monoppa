@@ -27,13 +27,9 @@ const ResponsiveImage = (_props: unknown) => {
     <Image
       {...props}
       alt={props.alt}
-      width={736}
+      className='bg-center bg-cover rounded'
+      width={768}
       height={400}
-      style={{
-        objectFit: 'cover',
-        objectPosition: 'center',
-        borderRadius: '4px',
-      }}
     />
   )
 }
@@ -59,7 +55,7 @@ const BlogLayout = ({ meta, children }: BlogLayoutProps) => {
           </nav>
         </div>
 
-        <article className='px-4 mx-auto prose lg:px-0 lg:prose-xl'>
+        <article className='max-w-3xl px-4 mx-auto prose lg:px-0 lg:prose-xl'>
           <h1
             className='font-semibold leading-tight tracking-tight'
             style={{ marginBottom: 0 }}
