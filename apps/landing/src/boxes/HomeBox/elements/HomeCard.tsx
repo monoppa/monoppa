@@ -29,10 +29,8 @@ const cardVariants: CardVariant = {
     style: {},
   },
   playlist: {
-    classes: 'bg-cover bg-center rounded-md',
-    style: {
-      backgroundImage: 'url(/img/lounge.png)',
-    },
+    classes: 'bg-cover bg-center rounded-md relative',
+    style: {},
   },
 }
 

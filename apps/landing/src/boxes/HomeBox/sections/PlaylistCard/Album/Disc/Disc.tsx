@@ -1,5 +1,6 @@
 import { useSpring, a } from '@react-spring/web'
 import React from 'react'
+import Image from 'next/image'
 import { ALBUM_SIZE, DISC_OFFSET, DISC_SIZE } from '../Album.constants'
 
 type DiscProps = {
@@ -24,10 +25,12 @@ const Disc = (props: DiscProps) => {
         top: `${DISC_OFFSET / 2}px`,
       }}
     >
-      <div
+      <Image
+        fill
+        src={discBackground}
+        alt='album-disc'
         className={`h-full w-full relative rounded-full animate-spin-disc overflow-hidden bg-cover bg-center`}
-        style={{ backgroundImage: discBackground }}
-      ></div>
+      />
     </a.div>
   )
 }

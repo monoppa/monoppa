@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
 import { useSpring, a } from '@react-spring/web'
 import Disc from './Disc/Disc'
 import { ALBUM_SIZE } from './Album.constants'
+
+const AnimatedImage = a(Image)
 
 type AlbumProps = {
   albumCoverImg: string
@@ -39,12 +42,12 @@ const Album = (props: AlbumProps) => {
       {/* album cover */}
       <div className='absolute inset-0 z-20 overflow-hidden border border-neutral-500'>
         {/* album artwork */}
-        <a.div
-          className='w-full h-full'
+        <AnimatedImage
+          src={albumCoverImg}
+          width={ALBUM_SIZE}
+          height={ALBUM_SIZE}
+          alt='album-artwork'
           style={{
-            background: albumCoverImg,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
             transform: coverSpring.transform,
           }}
         />

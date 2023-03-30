@@ -4,10 +4,13 @@ import HomeCard from '../../elements/HomeCard'
 import Album from './Album/Album'
 import Bg from './elements/Bg'
 import MusicIcon from './elements/MusicIcon'
+import Image from 'next/image'
 
 const PlaylistCard = () => {
   return (
     <HomeCard variant='playlist'>
+      <Image src='/img/lounge.png' alt='' fill className='bg-center bg-cover' />
+
       <div className='relative w-full h-full rounded-md'>
         <Bg />
 
@@ -26,20 +29,23 @@ const PlaylistCard = () => {
               rel='noreferrer noopener'
             >
               <Album
-                albumCoverImg='url(/img/helsinki-cover.png)'
-                discBackground='url(/img/helsinki-disc.png)'
+                albumCoverImg='/img/helsinki-cover.png'
+                discBackground='/img/helsinki-disc.png'
+                // discBackground='url(/img/helsinki-disc.png)'
+                // albumCoverImg='url(/img/helsinki-cover.png)'
               />
             </Link>
-            
+
             <Link
               href='https://open.spotify.com/playlist/2H5vBj8FVndeAJgrjFwIqk?si=19dfc39d679b4fe2'
               target='__blank'
               rel='noreferrer noopener'
             >
               <Album
-                albumCoverImg='url(/img/anime-album-cover.png)'
-                discBackground='url(/img/tokyo-disc.png)'
-                // link='https://open.spotify.com/playlist/2H5vBj8FVndeAJgrjFwIqk?si=19dfc39d679b4fe2'
+                albumCoverImg='/img/anime-album-cover.png'
+                discBackground='/img/tokyo-disc.png'
+                // discBackground='url(/img/tokyo-disc.png)'
+                // albumCoverImg='url(/img/anime-album-cover.png)'
               />
             </Link>
           </div>
