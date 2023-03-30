@@ -24,23 +24,26 @@ const HomeBox = () => {
           />
         </header>
 
-        <section className='flex mt-4 gap-x-4'>
+        <section className='flex flex-col mt-4 lg:flex-row gap-x-4 lg:gap-y-0 gap-y-4'>
           {/* left column */}
-          <div className='flex flex-col flex-1 w-1/2 gap-y-4'>
+          <div className='flex flex-col flex-1 w-full lg:w-1/2 gap-y-4'>
             <TorabelCard />
             <LatestPostCard />
           </div>
 
           {/* right column */}
-          <div className='flex flex-col flex-1 w-1/2 gap-y-4'>
+          <div className='flex flex-col flex-1 w-full lg:w-1/2 gap-y-4'>
             <LuxorCard />
             <PlaylistCard />
           </div>
         </section>
 
-        <footer className='flex flex-col items-center my-14'>
+        <footer className='flex flex-col items-center text-center my-14'>
           <p>Made with ♥️ from 🇵🇭 - © Mon Quindoza 2023</p>
-          <p>Built with NextJS. Styled with TailwindCSS. Animations by react-spring</p>
+          <p>
+            Built with NextJS. Styled with TailwindCSS. Animations by
+            react-spring
+          </p>
         </footer>
       </div>
     </div>

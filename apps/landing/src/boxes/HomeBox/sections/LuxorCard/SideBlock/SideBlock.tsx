@@ -15,7 +15,7 @@ const SideBlock = (props: SideBlockProps) => {
 
   return (
     <div
-      className={cx('bg-[#141516] flex-1 h-52', variants[variant], '')}
+      className={cx('bg-[#141516] w-1/12 h-52', variants[variant], '')}
     ></div>
   )
 }

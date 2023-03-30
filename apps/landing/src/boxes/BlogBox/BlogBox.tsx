@@ -10,7 +10,7 @@ const BlogBox = (props: BlogBoxProps) => {
   const { postMetadata } = props
 
   return (
-    <div className='max-w-4xl py-16 mx-auto'>
+    <div className='max-w-4xl px-4 py-16 mx-auto lg:px-0'>
       <nav className='mb-10'>
         <Link href='/' className='font-semibold underline'>
           Home

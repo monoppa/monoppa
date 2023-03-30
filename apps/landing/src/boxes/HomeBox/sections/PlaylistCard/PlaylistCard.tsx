@@ -6,11 +6,16 @@ import Bg from './elements/Bg'
 import MusicIcon from './elements/MusicIcon'
 import Image from 'next/image'
 
-// 
+//
 const PlaylistCard = () => {
   return (
     <HomeCard variant='playlist'>
-      <Image src='/img/lounge.png' alt='' fill className='bg-center bg-cover' />
+      <Image
+        src='/img/lounge.png'
+        alt=''
+        fill
+        className='bg-center bg-cover rounded-lg'
+      />
 
       <div className='relative w-full h-full rounded-md'>
         <Bg />

@@ -51,7 +51,7 @@ const BlogLayout = ({ meta, children }: BlogLayoutProps) => {
       }}
     >
       <div className='relative px-0 py-16 bg-neutral-50'>
-        <div className='pl-10'>
+        <div className='pl-4 lg:pl-10'>
           <nav>
             <Link href='/blog' className='font-semibold underline'>
               Go back
@@ -59,7 +59,7 @@ const BlogLayout = ({ meta, children }: BlogLayoutProps) => {
           </nav>
         </div>
 
-        <article className='mx-auto prose lg:prose-xl'>
+        <article className='px-4 mx-auto prose lg:px-0 lg:prose-xl'>
           <h1
             className='font-semibold leading-tight tracking-tight'
             style={{ marginBottom: 0 }}
