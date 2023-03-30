@@ -1,8 +1,8 @@
 import { AppProps } from 'next/app'
-import Head from 'next/head'
 import { Inter } from 'next/font/google'
 
 import '../src/styles/global.css'
+import Seo from '../src/components/Seo/Seo'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -12,9 +12,7 @@ const inter = Inter({
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Head>
-        <title>Welcome to landing!</title>
-      </Head>
+      <Seo />
 
       <style jsx global>{`
         html {

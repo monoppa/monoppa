@@ -36,6 +36,10 @@ const MeCard = () => {
               label: 'LinkedIn',
             },
             {
+              href: 'https://twitter.com/monoppa_',
+              label: 'Twitter',
+            },
+            {
               href: 'https://github.com/monoppa',
               label: 'Github',
             },

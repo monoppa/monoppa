@@ -37,6 +37,11 @@ const HomeBox = () => {
             <PlaylistCard />
           </div>
         </section>
+
+        <footer className='flex flex-col items-center my-14'>
+          <p>Made with ♥️ from 🇵🇭 - © Mon Quindoza 2023</p>
+          <p>Built with NextJS. Styled with TailwindCSS. Animations by react-spring</p>
+        </footer>
       </div>
     </div>
   )

@@ -50,6 +50,14 @@ const Album = (props: AlbumProps) => {
         />
       </div>
 
+      {hover && (
+        <div className='absolute inset-0 z-30 flex items-center justify-center'>
+          <div className='px-4 py-2 bg-neutral-900 text-neutral-50 rounded-3xl'>
+            Open on Spotify
+          </div>
+        </div>
+      )}
+
       <Disc hover={hover} discBackground={discBackground} />
     </div>
   )
