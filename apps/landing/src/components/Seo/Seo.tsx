@@ -22,10 +22,7 @@ const Seo = (props: SeoProps) => {
       <meta property='og:type' content='website' />
       <meta property='og:title' content={title} />
       <meta property='og:description' content={metaDescription} />
-      <meta
-        property='og:image'
-        content='https://firebasestorage.googleapis.com/v0/b/travy-staging.appspot.com/o/opengraph-3.png?alt=media'
-      />
+      <meta property='og:image' content='/monoppa-og.png' />
 
       {/* Twitter Meta Tags */}
       <meta name='twitter:card' content='summary_large_image' />
@@ -33,10 +30,7 @@ const Seo = (props: SeoProps) => {
       <meta property='twitter:url' content='https://monoppa.com/' />
       <meta name='twitter:title' content={title} />
       <meta name='twitter:description' content={metaDescription} />
-      <meta
-        name='twitter:image'
-        content='https://firebasestorage.googleapis.com/v0/b/travy-staging.appspot.com/o/opengraph-3.png?alt=media'
-      />
+      <meta name='twitter:image' content='/monoppa-og.png' />
 
       {props.children}
     </Head>
