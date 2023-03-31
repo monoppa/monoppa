@@ -6,10 +6,10 @@ import Blob2 from './elements/Blob2'
 
 const MeCard = () => {
   return (
-    <section className='relative z-10 flex-1 px-10 py-12 overflow-hidden rounded-2xl'>
+    <section className='relative z-10 flex-1 px-6 py-8 overflow-hidden lg:px-10 lg:py-12 rounded-2xl'>
       <div className='flex flex-col justify-between h-full'>
         <div className='z-10'>
-          <h1 className='text-4xl font-semibold'>
+          <h1 className='text-3xl font-semibold lg:text-4xl'>
             <span>{`Hey, I'm`}</span>
             <RoughNotation
               type='underline'
@@ -26,7 +26,7 @@ const MeCard = () => {
             <span>👋</span>
           </h1>
 
-          <p className='w-5/6 mt-8 text-2xl'>{`I'm a software engineer based from the Philippines🇵🇭, with passion and eye for good UI/UX design. Currently building Bitcoin mining products and services at Luxor.`}</p>
+          <p className='w-full mt-8 text-2xl lg:w-5/6'>{`I'm a software engineer based from the Philippines🇵🇭, with passion and eye for good UI/UX design. Currently building Bitcoin mining products and services at Luxor.`}</p>
         </div>
 
         <div className='z-10 flex mt-4 gap-x-4'>

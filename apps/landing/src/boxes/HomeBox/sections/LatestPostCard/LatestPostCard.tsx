@@ -10,7 +10,7 @@ const LatestPostCard = () => {
           <p className='text-lg text-neutral-50'>📝 Latest Post</p>
         </div>
 
-        <div className='flex flex-col pt-6 pl-12 pr-12 pb-14'>
+        <div className='flex flex-col px-4 pt-6 lg:px-12 pb-14'>
           <p className='text-2xl font-semibold text-neutral-100'>
             How to dynamically create responsive images with NextJS
           </p>
@@ -30,7 +30,7 @@ const LatestPostCard = () => {
             backgroundImage: 'linear-gradient(to bottom, transparent, black)',
           }}
         >
-          <div className='flex items-end justify-center h-full pt-4 pb-6 pl-12 pr-12'>
+          <div className='flex items-end justify-center h-full px-4 pt-4 pb-6 lg:px-12'>
             <Link
               className='w-full px-6 py-3 font-semibold text-center rounded-md cursor-pointer bg-neutral-700 text-neutral-50 hover:bg-neutral-600'
               href='/blog'

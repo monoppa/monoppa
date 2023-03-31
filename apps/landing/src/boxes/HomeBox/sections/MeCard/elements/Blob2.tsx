@@ -6,7 +6,7 @@ const Blob2 = () => (
     height={168}
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
-    className='absolute text-[hsla(hsla(215,99%,28%,0.8))] bottom-0 right-[5%] -z-10'
+    className='absolute text-[hsla(hsla(215,99%,28%,0.8))] bottom-0 right-[5%] -z-10 hidden lg:block'
   >
     <path
       fillRule='evenodd'

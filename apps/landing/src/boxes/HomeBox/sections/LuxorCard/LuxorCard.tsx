@@ -13,7 +13,7 @@ const LuxorCard = () => {
               Luxor,
             </p>
 
-            <p className='text-2xl lg:text-3xl text-neutral-200'>
+            <p className='text-xl lg:text-3xl text-neutral-200'>
               Software Engineer
             </p>
           </div>
@@ -22,7 +22,7 @@ const LuxorCard = () => {
         <p className='text-base text-neutral-200'>2021 - Present</p>
       </div>
 
-      <div className='flex items-center justify-between mt-8 gap-x-6'>
+      <div className='flex items-center justify-between mt-8 gap-x-4 lg:gap-x-6'>
         <SideBlock variant='left' />
 
         <div className='p-4 rounded-md overflow-hidden flex-1 h-64 shrink-0 bg-[#1C1D1F] relative'>

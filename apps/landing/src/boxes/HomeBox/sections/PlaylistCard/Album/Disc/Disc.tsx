@@ -11,14 +11,16 @@ type DiscProps = {
 const Disc = (props: DiscProps) => {
   const { hover, discBackground } = props
 
-  const { transform } = useSpring({
+  const { transform, opacity } = useSpring({
     transform: `translateX(${hover ? ALBUM_SIZE * 0.6 : '0'}px)`,
+    opacity: hover ? 1 : 0,
   })
 
   return (
     <a.div
       className='absolute left-0 z-10 rounded-full'
       style={{
+        opacity,
         transform,
         height: `${DISC_SIZE}px`,
         width: `${DISC_SIZE}px`,
