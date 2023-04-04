@@ -9,11 +9,12 @@ const AnimatedImage = a(Image)
 type AlbumProps = {
   albumCoverImg: string
   discBackground: string
+  defaultHover?: boolean
 }
 
 const Album = (props: AlbumProps) => {
-  const { albumCoverImg, discBackground } = props
-  const [hover, setHover] = useState(false)
+  const { albumCoverImg, discBackground, defaultHover = false } = props
+  const [hover, setHover] = useState(defaultHover)
 
   const coverSpring = useSpring({
     transform: `scale(${hover ? 1.05 : 1})`,
@@ -38,6 +39,8 @@ const Album = (props: AlbumProps) => {
       }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      onTouchStart={onMouseEnter}
+      onTouchEnd={onMouseLeave}
     >
       {/* album cover */}
       <div className='absolute inset-0 z-20 overflow-hidden border border-neutral-500'>

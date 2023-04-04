@@ -35,6 +35,7 @@ const PlaylistCard = () => {
               rel='noreferrer noopener'
             >
               <Album
+                defaultHover={true}
                 albumCoverImg='/img/helsinki-cover.png'
                 discBackground='/img/helsinki-disc.png'
                 // discBackground='url(/img/helsinki-disc.png)'

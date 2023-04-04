@@ -8,14 +8,7 @@ type HomeCardProps = {
   children: ReactNode
 }
 
-type CardVariantProp = {
-  classes: string
-  style: React.CSSProperties
-}
-
-type CardVariant = Record<string, CardVariantProp>
-
-const cardVariants: CardVariant = {
+const cardVariants = {
   torabel: {
     classes: 'bg-blue-600',
     style: {},
@@ -30,6 +23,10 @@ const cardVariants: CardVariant = {
   },
   playlist: {
     classes: 'bg-cover bg-center rounded-md relative',
+    style: {},
+  },
+  stats: {
+    classes: 'bg-neutral-900',
     style: {},
   },
 }

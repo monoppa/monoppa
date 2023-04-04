@@ -1,8 +1,6 @@
 import React, { ReactNode } from 'react'
 import { MDXProvider } from '@mdx-js/react'
 import Image, { ImageProps } from 'next/image'
-import Heading1 from './elements/Heading1'
-import Paragraph from './elements/Paragraph'
 import Link from 'next/link'
 
 type Tags = 'startup' | 'life'
@@ -13,6 +11,7 @@ type Meta = {
   coverImage: string
   publishDate: string
   description: string
+  views: number
   tags: Tags[]
 }
 
@@ -70,7 +69,9 @@ const BlogLayout = ({ meta, children }: BlogLayoutProps) => {
 
             <div className='h-[1px] w-full bg-neutral-400 rounded-3xl'></div>
 
-            <p className='text-base text-neutral-600 shrink-0'>-- views</p>
+            <p className='text-base text-neutral-600 shrink-0'>
+              {meta.views} views
+            </p>
           </div>
 
           <div>{children}</div>

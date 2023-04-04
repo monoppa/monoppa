@@ -5,6 +5,7 @@ import TorabelCard from './sections/TorabelCard/TorabelCard'
 import LuxorCard from './sections/LuxorCard/LuxorCard'
 import LatestPostCard from './sections/LatestPostCard/LatestPostCard'
 import PlaylistCard from './sections/PlaylistCard/PlaylistCard'
+import StatsCard from './sections/StatsCard/StatsCard'
 
 const IMAGE_WIDTH = 300
 const IMAGE_HEIGHT = IMAGE_WIDTH * 1.25
@@ -28,6 +29,7 @@ const HomeBox = () => {
           {/* left column */}
           <div className='flex flex-col flex-1 w-full lg:w-1/2 gap-y-4'>
             <TorabelCard />
+            <StatsCard />
             <LatestPostCard />
           </div>
 
