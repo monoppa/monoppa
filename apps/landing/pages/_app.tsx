@@ -1,8 +1,8 @@
 import { AppProps } from 'next/app'
 import { Inter } from 'next/font/google'
-
 import '../src/styles/global.css'
 import Seo from '../src/components/Seo/Seo'
+import GoogleTag from '../src/components/GoogleAnalytics/GoogleTag'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -12,6 +12,7 @@ const inter = Inter({
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <GoogleTag />
       <Seo />
 
       <style jsx global>{`
